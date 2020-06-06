@@ -95,7 +95,7 @@ server.get("/search-results", (req, res) => {
 
         //mostrar a página html com os dados do banco de dados
         return res.render("search-results.html", {places: rows, total})
-       })
+        })
 })
 
 //ligar o servidor

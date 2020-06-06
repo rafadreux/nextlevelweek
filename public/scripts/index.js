@@ -9,3 +9,10 @@ buttonSearch.addEventListener("click", () => {
 close.addEventListener("click", () => {
     modal.classList.add("hide")
 })
+
+// O código a baixo fecha o modal ao apertar a tecla ESC
+window.addEventListener('keydown', function (event) {
+    if (event.key === 'Escape') {
+      modal.classList.add("hide")
+    }
+  })
